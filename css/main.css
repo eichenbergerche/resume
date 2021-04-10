@@ -3,6 +3,7 @@
   display: flex;
   flex-basis: 1200px;
   justify-content:center;
+  background-color: #F2F2F2;
 }
 
 /* --------------- GENERAL -------------- */
@@ -77,7 +78,7 @@ main section > h2 {
   padding: 15px;
 }
 .about-me h2 {
-  background-color: white;
+  background-color: #F2F2F2;
 }
 article h3,
 article h4 {
