@@ -104,11 +104,24 @@ dt {
   font-weight: bolder;
 }
 /* --------------- ICONS ----------------- */
-.social-item:before {
+.fb::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f1ea"
+  content: "\f02d";
 }
 .social-item::before {
-  padding-right: 15px
+  padding-right: 15px;
 }
+/* --------------- METER ----------------- */
+meter {
+  display: block;
+  width: 80%;
+}
+meter::-webkit-meter-optimum-value {
+   background: none;
+   background-color: #768FA6;
+ }
+ meter::-webkit-meter-bar {
+    background: none;
+    background-color: #F2F2F2;
+  }
