@@ -1,3 +1,9 @@
+/* --------------- LAYOUT -------------- */
+.main-container {
+  display: flex;
+  width: 1200px;
+}
+
 /* --------------- GENERAL -------------- */
 ul {
   list-style-type: none;
