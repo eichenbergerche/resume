@@ -130,13 +130,13 @@ dt {
   font-weight: bolder;
 }
 /* --------------- ICONS ----------------- */
-@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
-.fp-prev:before {
+.fab: {
   content: "\f099";
   font-family: "Font Awesome 5 Free";
   font-style: normal;
-  font-weight: normal;
+  font-weight: 900;
   text-decoration: inherit;
+  color: #F2F2F2;
 }
 /* - */
 /* .icon {
