@@ -8,6 +8,10 @@
 ul {
   list-style-type: none;
 }
+h1,
+h2 {
+  text-transform: uppercase;
+}
 /* --------------- ASIDE ----------------- */
 aside {
   background-color: #647087;
@@ -36,15 +40,25 @@ main section > h2 {
 .hero {
   background-color: #EDC0AF;
   box-shadow: 2px 2px 40px 1px #647087 inset;
+  padding: 15% 0;
+  text-align: center;
 }
 .hero h2 {
   color: white;
   border-top: 2px solid white;
   text-transform: none;
-  letter-spacing: normal;
+  letter-spacing: 10px;
 }
-.about-me {
+.hero h1 {
+  letter-spacing: 10px;
+}
+/* .about-me {
   background-color: #F7DDC3;
+} */
+.about-me p {
+  line-height: 1.5em;
+  background-color: #F7DDC3;
+  padding: 15px;
 }
 .about-me h2 {
   background-color: white;
@@ -60,9 +74,12 @@ article ul {
 .references {
   display: flex;
   flex-wrap: wrap;
+  background-color: #F7DDC3;
+  padding: 15px;
 }
 .references article {
   flex-basis: 50%;
+  text-align: center;
 }
 /* --------------- DL ----------------- */
 
@@ -83,4 +100,12 @@ dl {
 }
 dt {
   font-weight: bolder;
+}
+/* --------------- ICONS ----------------- */
+.fb:before {
+  content: "\f09a";
+  font-family: "Font Awesome 5 Free";
+}
+.social-item::before {
+  padding-right: 15px;
 }
