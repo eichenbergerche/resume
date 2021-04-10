@@ -11,6 +11,8 @@ ul {
 /* --------------- ASIDE ----------------- */
 aside {
   background-color: #647087;
+  width: 30%;
+  margin-right: 3%;
 }
 aside * {
   color: white;
