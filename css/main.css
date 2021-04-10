@@ -56,4 +56,11 @@ article h4 {
 article ul {
   list-style-type: square;
 }
-/
+/* --------------- REFERENCES ----------------- */
+.references {
+  display: flex;
+  flex-wrap: wrap;
+}
+.references article {
+  flex-basis: 50%;
+}
