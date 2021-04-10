@@ -4,6 +4,8 @@
   flex-basis: 1200px;
   justify-content:center;
   background-color: #F2F2F2;
+  font-family: 'Roboto Slab', serif;
+  color: #0B2C40;
 }
 
 /* --------------- GENERAL -------------- */
@@ -22,6 +24,8 @@ aside {
   background-color: #51718C;
   flex-basis: 25%;
   margin-right: 2%;
+  margin-top: 1%;
+  margin-bottom: 5px;
 }
 aside * {
   color: #F2F2F2;
@@ -48,7 +52,8 @@ aside section h2:first-child {
 
 /* --------------- MAIN ----------------- */
 main {
-  flex-basis: 60%;
+  flex-basis: 70%;
+  margin-top: 1%;
 }
 main section > h2 {
   text-transform: uppercase;
@@ -56,18 +61,21 @@ main section > h2 {
 }
 .hero {
   background-color: #768FA6;
-  box-shadow: 2px 2px 1px #51718C inset;
+  box-shadow: 0 0 0 4px #51718C inset;
   padding: 15% 0;
   text-align: center;
 }
 .hero h2 {
-  color: white;
-  border-top: 2px solid white;
+  color: #F2F2F2;
+  border-top: 3px solid #F2F2F2;
   text-transform: none;
-  letter-spacing: 10px;
+  padding-top: 2%;
+  letter-spacing: 7px;
 }
 .hero h1 {
   letter-spacing: 10px;
+  font-size: 30px;
+  color: #0B2C40;
 }
 /* .about-me {
   background-color: #F7DDC3;
@@ -88,16 +96,17 @@ article ul {
   list-style-type: square;
 }
 /* --------------- REFERENCES ----------------- */
-/* .references {
+.references {
   display: flex;
   flex-wrap: wrap;
   background-color: #BFD1D9;
   padding: 15px;
+  margin-bottom: 5px;
 }
 .references article {
   flex-basis: 50%;
   text-align: center;
-} */
+}
 /* --------------- DL ----------------- */
 
 dt,
@@ -121,24 +130,26 @@ dt {
   font-weight: bolder;
 }
 /* --------------- ICONS ----------------- */
-/* .social-item::before {
-  display: inline-block;
-  padding-right: 15px;
-} */
-.icon::before {
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  display: inline-block;
-  font-style: normal;
-  font-weight: 900;
-  font-variant: normal;
-  text-rendering: auto;
-  line-height: 1;
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+.fp-prev:before {
+  content: "\f099";
   font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
 }
-.fb::before {
-  content: "\f121";
+/* .icon {
+    text-decoration: none;
+    color: #515151;
 }
+.icon::before {
+   font-family: "Font Awesome 5 Free";
+   content: "\f095";
+   display: inline-block;
+   padding-right: 3px;
+   vertical-align: middle;
+   font-weight: 900;
+} */
 
 /* --------------- METER ----------------- */
 meter {
