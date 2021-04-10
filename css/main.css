@@ -70,19 +70,9 @@ dt,
 dd {
   line-height: 1.5em;
   border-top: 1px solid white;
-}
-/* dt {
-  font-weight: bold;
-  clear: left;
-  width: 30%;
-  float: left;
-}
-dd {
-  clear: right;
-  width: 50%;
-  float: left;
+  width: 40%;
   margin: 0;
-} */
+}
 dt:last-of-type,
 dd:last-child {
   border-bottom: 1px solid white;
@@ -91,8 +81,6 @@ dl {
   display: flex;
   flex-wrap: wrap;
 }
-dt,
-dd {
-  width: 40%;
-  margin: 0;
+dt {
+  font-weight: bolder;
 }
