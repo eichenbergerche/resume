@@ -1,12 +1,16 @@
 /* --------------- LAYOUT -------------- */
 .main-container {
   display: flex;
-  width: 1200px;
+  flex-basis: 1200px;
+  justify-content:center;
 }
 
 /* --------------- GENERAL -------------- */
 ul {
   list-style-type: none;
+}
+.clear {
+  clear: both;
 }
 h1,
 h2 {
@@ -15,25 +19,36 @@ h2 {
 /* --------------- ASIDE ----------------- */
 aside {
   background-color: #51718C;
-  width: 30%;
-  margin-right: 3%;
+  flex-basis: 25%;
+  margin-right: 2%;
 }
 aside * {
   color: #F2F2F2;
+
 }
 aside h2 {
   text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 aside section h2:first-child {
   border-bottom: 2px solid #F2F2F2;
+  margin-left: 3%;
 }
-
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #profile-pic img {
   border-radius: 50%;
   border: solid #F2F2F2;
+  width: 200px;
 }
+
 /* --------------- MAIN ----------------- */
+main {
+  flex-basis: 60%;
+}
 main section > h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -72,7 +87,7 @@ article ul {
   list-style-type: square;
 }
 /* --------------- REFERENCES ----------------- */
-.references {
+/* .references {
   display: flex;
   flex-wrap: wrap;
   background-color: #BFD1D9;
@@ -81,7 +96,7 @@ article ul {
 .references article {
   flex-basis: 50%;
   text-align: center;
-}
+} */
 /* --------------- DL ----------------- */
 
 dt,
@@ -99,19 +114,31 @@ dd:last-child {
 dl {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 dt {
   font-weight: bolder;
 }
 /* --------------- ICONS ----------------- */
-.fb::before {
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  content: "\f02d";
-}
-.social-item::before {
+/* .social-item::before {
+  display: inline-block;
   padding-right: 15px;
+} */
+.icon::before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 900;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  font-family: "Font Awesome 5 Free";
 }
+.fb::before {
+  content: "\f121";
+}
+
 /* --------------- METER ----------------- */
 meter {
   display: block;
