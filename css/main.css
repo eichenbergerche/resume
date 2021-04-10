@@ -14,23 +14,24 @@ h2 {
 }
 /* --------------- ASIDE ----------------- */
 aside {
-  background-color: #647087;
+  background-color: #51718C;
   width: 30%;
   margin-right: 3%;
 }
 aside * {
-  color: white;
+  color: #F2F2F2;
 }
 aside h2 {
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 aside section h2:first-child {
-  border-bottom: 2px solid white;
+  border-bottom: 2px solid #F2F2F2;
 }
 
 #profile-pic img {
   border-radius: 50%;
+  border: solid #F2F2F2;
 }
 /* --------------- MAIN ----------------- */
 main section > h2 {
@@ -38,8 +39,8 @@ main section > h2 {
   letter-spacing: 5px;
 }
 .hero {
-  background-color: #EDC0AF;
-  box-shadow: 2px 2px 40px 1px #647087 inset;
+  background-color: #768FA6;
+  box-shadow: 2px 2px 1px #51718C inset;
   padding: 15% 0;
   text-align: center;
 }
@@ -57,7 +58,7 @@ main section > h2 {
 } */
 .about-me p {
   line-height: 1.5em;
-  background-color: #F7DDC3;
+  background-color: #BFD1D9;
   padding: 15px;
 }
 .about-me h2 {
@@ -74,7 +75,7 @@ article ul {
 .references {
   display: flex;
   flex-wrap: wrap;
-  background-color: #F7DDC3;
+  background-color: #BFD1D9;
   padding: 15px;
 }
 .references article {
@@ -86,13 +87,13 @@ article ul {
 dt,
 dd {
   line-height: 1.5em;
-  border-top: 1px solid white;
+  border-top: 1px solid #F2F2F2;
   width: 40%;
   margin: 0;
 }
 dt:last-of-type,
 dd:last-child {
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid #F2F2F2;
 }
 dl {
   display: flex;
@@ -102,10 +103,11 @@ dt {
   font-weight: bolder;
 }
 /* --------------- ICONS ----------------- */
-.fb:before {
-  content: "\f09a";
+.social-item:before {
   font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f1ea"
 }
 .social-item::before {
-  padding-right: 15px;
+  padding-right: 15px
 }
