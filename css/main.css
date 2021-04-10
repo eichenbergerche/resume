@@ -95,6 +95,7 @@ dt:last-of-type,
 dd:last-child {
   border-bottom: 1px solid #F2F2F2;
 }
+
 dl {
   display: flex;
   flex-wrap: wrap;
